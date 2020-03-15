@@ -65,8 +65,8 @@ for file in os.listdir(directory):
         img = cv2.imread("Datas3\\" + filename)
         #img = rgb2gray(cv2.imread("Datas\\" + filename))
         img = cv2.resize(img, (int(img.shape[1] / 2), int(img.shape[0] / 2)))
-        show_hough_transform(img, filename)
-        #print('Door wight: ', width_door_hough(img))
+        #show_hough_transform(img, filename)
+        print('Door wight: ', width_door_hough(img))
 
 
 cv2.waitKey(0)
